@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2d7c5b95fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#myfriends">My Friends</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Web Developer</p>
+                <h1>Hello, I'm <span>Odemuyiwa Titilayo</span> <br> and I would love to know you!!!</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/Me.jpg" >
+                </div>
+                <div class="col-2">
+                    <h1 class="subtitle">About Me</h1> <br>
+                    <p> <span>SKILLS:</span> Flexibility, Communication, Team Work, Attention to Detail, Responsibiliy, Basic knowledge in HTML and CSS, Basic knowledge in PHP,Javascript,MySQL.  <br><br> <br><span> EXPERIENCE:</span>
+                    Business Development Officer <br> July 2023 - December 2023 <br><br><br> <span>EDUCATION:</span> Tai Solarin University of Education <br> ijagun,ijebu-ode, Ogun state <br> Bachelor of Science(B.S.c Ed.) Degree in Chemistry <br> 2018 - 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- myfriends -->
+
+    <div id="myfriends">
+        <div class="container">
+            <h1 class="subtitle">My Friends</h1>
+            <div class="friend-list">
+                <div class="friends">
+                    <img src="images/friend 3.jpg" >
+                </div>
+                <div class="friends">
+                    <img src="images/friend 1.jpg" >
+                </div>
+                <div class="friends">
+                    <img src="images/friend 2.jpg" >
+                </div>
+                <div class="friends">
+                    <img src="images/friend 4.jpg" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <p>I don't have a portfolio so i am just using random pictures. I hope you understand!!!</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <p>I don't have a portfolio so i am just using random pictures. I hope you understand!!!</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <p>I don't have a portfolio so i am just using random pictures. I hope you understand!!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> odemuyiwatitilayo744@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>09161137288</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/odemuyiwa-titilayo-b60340287/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/OdemuyiwaTitilayoAyomide.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Titilayo.</p>
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0" ;
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px" ;
+        }
+    </script>
+</body>
+</html>
